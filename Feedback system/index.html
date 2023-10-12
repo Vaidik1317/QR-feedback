@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylefb.css">
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="icon/Gujarat_Police_Logo.png" alt="Gujarat Police Logo" width="42px">
+                    <span>Gujarat Police</span><br>
+                    <div class="link">
+                        <a href="target">Gujarati</a>
+                        <a href="target">Hindi</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="content">
+            <h1><b>Enter your feedback</b></h1>
+            <form action="/submit" method="post">
+                <!-- user name and feedback -->
+
+                <label for="username">Name:</label>
+                <input placeholder="" type="text" id="ursname" name="uname"><br>
+
+                <!-- category -->
+                <div class="ctg">
+                    <ul>
+                        <li>
+                            <p>select:<select name="category" id="category"></p>
+                        </li>
+                        <li>
+                            <option value="1">General</option>
+                        </li>
+                        <li>
+                            <option value="2">Missing Person</option>
+                        </li>
+                        <li>
+                            <option value="3">Accident</option>
+                        </li>
+                        <li>
+                            <option value="4">Domestic Violence</option>
+                        </li>
+                        <li>
+                            <option value="5">Homicide</option>
+                        </li>
+                        <li>
+                            <option value="6">Rape</option>
+                        </li>
+                        <li>
+                            <option value="7">Kidnapping and Abduction</option>
+                        </li>
+                        <li>
+                            <option value="8">Cybercrime</option>
+                        </li>
+                        <li>
+                            <option value="9">Narcotics </option>
+                        </li>
+                        <li>
+                            <option value="10">Riot</option>
+                        </li>
+                        <li>
+                            <option value="11">Dowry Harassment</option>
+                        </li>
+                        <li>
+                            <option value="12">Economic Offense </option>
+                        </li>
+                        <li>
+                            <option value="13">Other</option>
+                        </li>
+                        <li></select></li>
+                </div>
+
+                <!-- types -->
+                <div class="ch">
+                    <label class="cho">
+                        <input type="radio" name="radio" id="c1"><b>Compliments</b>
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="cho">
+                        <input type="radio" name="radio" id="c2"><b>Complaints</b>
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="cho">
+                        <input type="radio" name="radio" id="c3"><b>Suggestions</b>
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+                <!-- feedback -->
+                <li><label for="feedback">Feedback:</label><br>
+                    <textarea rows="15" cols="150" name="feedback">Enter your feedback here</textarea>
+                </li>
+
+                <div class="Rate_N_Submit">
+                    <div class="rate">
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="text">5 stars</label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text">1 star</label>
+                    </div>
+
+                    <div class="btn">
+                        <!-- submit btn -->
+                        <li><input id="Sbtn" class="Sbtn" type="submit" value="submit"></li>
+                    </div>
+                </div>
+                </ul>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
