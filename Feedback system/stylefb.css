@@ -52,11 +52,8 @@ span {
 
 textarea {
     width: 100%;
-    /* Set the width to 100% of its container */
     max-width: 100%;
-    /* Set a maximum width to avoid becoming too wide */
     box-sizing: border-box;
-    /* Include padding and border in the total width */
     background-color:#E5CFF7
 }
 
