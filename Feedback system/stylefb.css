@@ -8,32 +8,40 @@
 
 .main {
     border: solid black 1px;
-    width: 900px;
+    width: auto;
     height: 690px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color:#9D76C1
 }
 
 .logo {
     border: solid black 2px;
-    text-align: center;
-    background-color: blue;
-    color: white;
+    text-align: center; 
+    font-size: 32px;
+    background-color: #5B0888;
 }
-
+.logo img {
+    width: 60px;
+    height: 75px;
+    
+}
 span {
-    vertical-align: 30px;
+    vertical-align: 27px;
+    font-weight: bold;
 }
 
 .link {
     margin: 5px;
     text-align: right;
     padding-bottom: 20px;
+    
+    
 }
 
 .link a {
     margin: 5px;
-    color: white;
     text-decoration: none;
+    font-size: 23px;
 
 }
 
@@ -44,8 +52,12 @@ span {
 
 textarea {
     width: 100%;
+    /* Set the width to 100% of its container */
     max-width: 100%;
+    /* Set a maximum width to avoid becoming too wide */
     box-sizing: border-box;
+    /* Include padding and border in the total width */
+    background-color:#E5CFF7
 }
 
 .rate {
