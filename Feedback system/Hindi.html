@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>दस्तावेज़</title>
+    <link rel="stylesheet" href="stylefb.css">
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="icon/Gujarat_Police_Logo.png" alt="गुजरात पुलिस लोगो">
+                    <span>गुजरात पुलिस</span><br>
+                    <div class="link">
+                        <a href="Home.html">गुजराती</a>
+                        <a href="index.html">अंग्रेज़ी</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="content">
+            <h1><b>अपनी प्रतिक्रिया दर्ज करें</b></h1>
+            <form action="/submit" method="post">
+                <!-- user name and feedback -->
+
+                <label for="username">नाम:</label>
+                <input placeholder="" type="text" id="ursname" name="uname"><br>
+
+                <!-- category -->
+                <div class="ctg">
+                    <ul>
+                        <li>
+                            <p>चुनें:<select name="category" id="category"></p>
+                        </li>
+                        <li>
+                            <option value="1">सामान्य</option>
+                        </li>
+                        <li>
+                            <option value="2">लापता व्यक्ति</option>
+                        </li>
+                        <li>
+                            <option value="3">दुर्घटना</option>
+                        </li>
+                        <li>
+                            <option value="4">घरेलू हिंसा</option>
+                        </li>
+                        <li>
+                            <option value="5">हत्या</option>
+                        </li>
+                        <li>
+                            <option value="6">बलात्कार</option>
+                        </li>
+                        <li>
+                            <option value="7">अपहरण और अपहरण</option>
+                        </li>
+                        <li>
+                            <option value="8">साइबरक्राइम</option>
+                        </li>
+                        <li>
+                            <option value="9">नारकोटिक्स</option>
+                        </li>
+                        <li>
+                            <option value="10">दंगे</option>
+                        </li>
+                        <li>
+                            <option value="11">दहेज हारेसमेंट</option>
+                        </li>
+                        <li>
+                            <option value="12">आर्थिक अपराध </option>
+                        </li>
+                        <li>
+                            <option value="13">अन्य</option>
+                        </li>
+                        <li></select></li>
+                </div>
+
+                <!-- types -->
+                <div class="ch">
+                    <label class="cho">
+                        <input type="radio" name="radio" id="c1" required><b>सराहना</b>
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="cho">
+                        <input type="radio" name="radio" id="c2" required><b>शिकायतें</b>
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="cho">
+                        <input type="radio" name="radio" id="c3" required><b>सुझाव</b>
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+                <!-- feedback -->
+                <li><label for="feedback">प्रतिक्रिया:</label><br>
+                    <textarea rows="15" cols="150" name="feedback">यहां अपनी प्रतिक्रिया दर्ज करें</textarea>
+                </li>
+
+                <div class="Rate_N_Submit">
+                    <div class="rate">
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="text">5 तारे</label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text">4 तारे</label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text">3 तारे</label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text">2 तारे</label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text">1 तारा</label>
+                    </div>
+
+                    <div class="btn">
+                        <!-- submit btn -->
+                        <li><input id="Sbtn" class="Sbtn" type="submit" value="सबमिट करें"></li>
+                    </div>
+                </div>
+                </ul>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

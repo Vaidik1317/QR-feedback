@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="gu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>દસ્તાવેજ</title>
+    <link rel="stylesheet" href="stylefb.css">
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="icon/Gujarat_Police_Logo.png" alt="ગુજરાત પોલીસ લોગો">
+                    <span>ગુજરાત પોલીસ</span><br>
+                    <div class="link">
+                        <a href="index.html">અંગ્રેજી</a>
+                        <a href="Hindi.html">હિન્દી</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="content">
+            <h1><b>તમારી પ્રતિસાદ દર્જ કરો</b></h1>
+            <form action="/submit" method="post">
+                <!-- user name and feedback -->
+
+                <label for="username">નામ:</label>
+                <input placeholder="" type="text" id="ursname" name="uname"><br>
+
+                <!-- category -->
+                <div class="ctg">
+                    <ul>
+                        <li>
+                            <p>પસંદ કરો:<select name="category" id="category"></p>
+                        </li>
+                        <li>
+                            <option value="1">સામાન્ય</option>
+                        </li>
+                        <li>
+                            <option value="2">લાપતા વ્યક્તિ</option>
+                        </li>
+                        <li>
+                            <option value="3">અકસ્માત</option>
+                        </li>
+                        <li>
+                            <option value="4">ઘરેલુ સંઘર્ષ</option>
+                        </li>
+                        <li>
+                            <option value="5">હત્યા</option>
+                        </li>
+                        <li>
+                            <option value="6">બલાત્કાર</option>
+                        </li>
+                        <li>
+                            <option value="7">અપહરણ અને અપહરણ</option>
+                        </li>
+                        <li>
+                            <option value="8">સાઇબરક્રાઇમ</option>
+                        </li>
+                        <li>
+                            <option value="9">નાર્કોટિક્સ</option>
+                        </li>
+                        <li>
+                            <option value="10">દંગો</option>
+                        </li>
+                        <li>
+                            <option value="11">દાહોદિક પ્રતાડન</option>
+                        </li>
+                        <li>
+                            <option value="12">આર્થિક અપરાધ </option>
+                        </li>
+                        <li>
+                            <option value="13">અન્ય</option>
+                        </li>
+                        <li></select></li>
+                </div>
+
+                <!-- types -->
+                <div class="ch">
+                    <label class="cho">
+                        <input type="radio" name="radio" id="c1" required><b>માન્યતા</b>
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="cho">
+                        <input type="radio" name="radio" id="c2" required><b>શિકાયતો</b>
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="cho">
+                        <input type="radio" name="radio" id="c3" required><b>સૂચનાઓ</b>
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+                <!-- feedback -->
+                <li><label for="feedback">પ્રતિસાદ:</label><br>
+                    <textarea rows="15" cols="150" name="feedback">અહીં તમારી પ્રતિસાદ દાખલ કરો</textarea>
+                </li>
+
+                <div class="Rate_N_Submit">
+                    <div class="rate">
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="text">5 તારા</label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text">4 તારા</label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text">3 તારા</label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text">2 તારા</label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text">1 તારો</label>
+                    </div>
+
+                    <div class="btn">
+                        <!-- submit btn -->
+                        <li><input id="Sbtn" class="Sbtn" type="submit" value="સબમિટ કરો"></li>
+                    </div>
+                </div>
+                </ul>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
